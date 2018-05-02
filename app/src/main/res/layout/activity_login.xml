@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/co_login_bg"
+    tools:context="com.example.easyrepair3.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:text="@string/str_login_title"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="@string/str_login_register"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/co_edit_bg"
+        android:hint="@string/str_edit_username"
+        android:paddingLeft="16dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/co_edit_bg"
+        android:hint="@string/str_edit_password"
+        android:padding="16dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/remember_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="记住密码"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="@string/str_login_title"
+        android:background="@drawable/shape"
+        android:layout_margin="16dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="28dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_find_password"
+            android:layout_marginLeft="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/co_other_words"/>
+        <TextView
+            android:id="@+id/tel_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_quick_login"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="16dp"
+            android:textSize="16sp"
+            android:textColor="@color/co_other_words"
+            />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_page_info"
+        android:layout_marginTop="140dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_weibo"
+            />
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_qq"
+            android:layout_marginLeft="85dp"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/button_wechat"
+            android:layout_marginLeft="85dp"/>
+    </LinearLayout>
+
+</LinearLayout>

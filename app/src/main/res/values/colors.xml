@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="co_title_words">#565656</color>  <!-- 登录和注册文字颜色值-->
+    <color name="co_cdit_words">#999999</color> <!-- 输入框文字颜色值-->
+    <color name="co_other_words">#34bfb4</color> <!-- 找回密码和手机号快捷登录的颜色值-->
+    <color name="co_login_bg">#f0f0f0</color> <!-- 登录页面背景颜色值-->
+    <color name="co_edit_bg">#ffffff</color> <!-- 登录页面编辑框的背景颜色值-->
+    <color name="bg_gray">#FFE3E3E7</color><!-- 主页背景颜色值-->
+    <color name="white">#FFFFFFFF</color>
+</resources>
