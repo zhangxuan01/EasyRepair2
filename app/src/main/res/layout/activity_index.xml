@@ -43,6 +43,7 @@
                     android:id="@+id/main_tab_blogs"
                     style="@style/MMTabButton"
                     android:layout_weight="1.0"
+                    android:checked="true"
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_0"
                     android:text="博客" />
 
@@ -50,7 +51,6 @@
                     android:id="@+id/main_tab_shopping"
                     style="@style/MMTabButton"
                     android:layout_weight="1.0"
-                    android:checked="true"
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_1"
                     android:text="商城" />
 
