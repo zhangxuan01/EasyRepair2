@@ -12,7 +12,7 @@ public class BlogsActivity extends TabActivity {
         setContentView(R.layout.activity_blogs);
         TabHost tabHost = getTabHost();
 
-        TabHost.TabSpec tab01,tab02,tab03,tab04,tab05;
+        TabHost.TabSpec tab01,tab02,tab03,tab04,tab05,tab06;
 
 
         tab01 = tabHost.newTabSpec("tab1").setIndicator("常见故障").setContent(R.id.tab01);
@@ -29,5 +29,8 @@ public class BlogsActivity extends TabActivity {
 
         tab05 = tabHost.newTabSpec("tab5").setIndicator("内存").setContent(R.id.tab05);
         tabHost.addTab(tab05);
+
+        tab06 = tabHost.newTabSpec("tab6").setIndicator("其他").setContent(R.id.tab06);
+        tabHost.addTab(tab06);
     }
 }

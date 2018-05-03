@@ -67,6 +67,15 @@
                     android:layout_height="match_parent"
                     android:text="内存"/>
             </LinearLayout>
+            <LinearLayout
+                android:id="@+id/tab06"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="其他"/>
+            </LinearLayout>
         </FrameLayout>
 
     </LinearLayout>

@@ -47,12 +47,7 @@
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_0"
                     android:text="博客" />
 
-                <RadioButton
-                    android:id="@+id/main_tab_shopping"
-                    style="@style/MMTabButton"
-                    android:layout_weight="1.0"
-                    android:drawableTop="@drawable/bg_checkbox_icon_menu_1"
-                    android:text="商城" />
+
 
                 <RadioButton
                     android:id="@+id/main_tab_forum"
@@ -69,6 +64,12 @@
 
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_3"
                     android:text="订单" />
+                <RadioButton
+                    android:id="@+id/main_tab_shopping"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_1"
+                    android:text="我的" />
             </RadioGroup>
 
             <TextView

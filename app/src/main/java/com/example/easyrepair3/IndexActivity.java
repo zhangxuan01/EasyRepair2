@@ -30,7 +30,7 @@ public class IndexActivity extends TabActivity {
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this,ShoppingActivity.class);
-        spec = tabHost.newTabSpec("商城").setIndicator("商城").setContent(intent);
+        spec = tabHost.newTabSpec("我的").setIndicator("我的").setContent(intent);
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this,ForumActivity.class);
@@ -52,7 +52,7 @@ public class IndexActivity extends TabActivity {
                         tabHost.setCurrentTabByTag("博客");
                         break;
                     case R.id.main_tab_shopping:
-                        tabHost.setCurrentTabByTag("商城");
+                        tabHost.setCurrentTabByTag("我的");
                         break;
                     case R.id.main_tab_forum:
                         tabHost.setCurrentTabByTag("论坛");
