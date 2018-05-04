@@ -24,6 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox rememberPass;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
+    public String Username;
 
 
 
@@ -74,6 +75,7 @@ public class LoginActivity extends AppCompatActivity {
                        editor.clear();
                    }
                   editor.apply();
+
                     Intent intent = new Intent();
                     intent=new Intent(LoginActivity.this ,IndexActivity.class);
                     startActivity( intent);

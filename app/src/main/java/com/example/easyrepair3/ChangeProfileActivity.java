@@ -1,15 +1,19 @@
 package com.example.easyrepair3;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class ChangeProfileActivity extends AppCompatActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
     private ImageView iv_back;
+    private TextView tv_change_name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,11 +24,16 @@ public class ChangeProfileActivity extends AppCompatActivity implements View.OnC
 
         setToolbar();
         setListeners();
+        SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(this);
+        String username = pref.getString("username","");
+        tv_change_name.setText(username);
     }
 
     private void initViews() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         iv_back = (ImageView) findViewById(R.id.iv_back);
+        tv_change_name = (TextView) findViewById(R.id.tv_change_name);
+
     }
     private void setListeners() {
         iv_back.setOnClickListener(this);
