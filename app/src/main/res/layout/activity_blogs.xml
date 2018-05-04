@@ -18,63 +18,72 @@
         <FrameLayout
             android:id="@android:id/tabcontent"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            >
             <LinearLayout
                 android:id="@+id/tab01"
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view1"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="常见故障"/>
+                    android:layout_height="wrap_content"></ListView>
+
 
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tab02"
                 android:orientation="vertical"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view2"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="主板"/>
+                    android:layout_height="wrap_content"></ListView>
+
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tab03"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view3"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="硬盘"/>
+                    android:layout_height="wrap_content"></ListView>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tab04"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view4"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="CPU"/>
+                    android:layout_height="wrap_content"></ListView>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tab05"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view5"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="内存"/>
+                    android:layout_height="wrap_content"></ListView>
             </LinearLayout>
             <LinearLayout
                 android:id="@+id/tab06"
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
-                <TextView
+                android:layout_height="fill_parent"
+                android:layout_margin="5dp">
+                <ListView
+                    android:id="@+id/list_view6"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="其他"/>
+                    android:layout_height="wrap_content"></ListView>
             </LinearLayout>
         </FrameLayout>
 

@@ -23,7 +23,7 @@
         <activity android:name=".BlogsActivity" />
         <activity android:name=".ShoppingActivity" />
         <activity android:name=".ForumActivity" />
-        <activity android:name=".OrderActivity"></activity>
+        <activity android:name=".OrderActivity" />
     </application>
 
 </manifest>
