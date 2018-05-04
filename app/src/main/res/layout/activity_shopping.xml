@@ -1,14 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.easyrepair3.ShoppingActivity">
 
-    <TextView
+    <com.example.easyrepair3.MyScrollView
+        android:id="@+id/my_scroll_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="shangc"/>
+        android:scrollbars="none">
 
-</android.support.constraint.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:background="@drawable/my_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:paddingTop="40dp">
+
+                    <ImageView
+                        android:id="@+id/iv_header"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/default_header" />
+
+                    <TextView
+                        android:id="@+id/tv_nickname"
+                        style="@style/text_in_header"
+                        android:layout_below="@id/iv_header"
+                        android:layout_centerHorizontal="true"
+                        android:paddingTop="10dp"
+                        android:text="张三" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <View style="@style/divider_16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待付款"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="待评价"
+                    android:textColor="@color/text_black" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="全部订单"
+                    android:textColor="@color/text_black" />
+            </LinearLayout>
+
+            <View style="@style/divider_16dp" />
+
+            <TextView
+                android:id="@+id/wallet"
+                style="@style/text_item"
+                android:text="我的钱包" />
+
+            <View style="@style/divider_16dp" />
+
+            <TextView
+                android:id="@+id/collection"
+                style="@style/text_item"
+                android:text="我的收藏" />
+
+            <View style="@style/divider_16dp" />
+
+            <TextView
+                android:id="@+id/jifen"
+                style="@style/text_item"
+                android:text="积分会员" />
+
+            <View style="@style/divider"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/anquan"
+                style="@style/text_item"
+                android:text="账户与安全" />
+
+            <View style="@style/divider"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                style="@style/text_item"
+                android:text="易修客服" />
+
+            <View
+                style="@style/divider"
+                android:layout_marginLeft="16dp" />
+
+            <TextView
+                android:id="@+id/guanyu"
+                style="@style/text_item"
+                android:text="关于易修" />
+
+            <View
+                style="@style/divider_16dp" />
+
+            <TextView
+                android:id="@+id/setting"
+                style="@style/text_item"
+                android:text="设置" />
+
+            <View
+                style="@style/divider" />
+        </LinearLayout>
+    </com.example.easyrepair3.MyScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+    </android.support.v7.widget.Toolbar>
+
+    <View
+        android:id="@+id/divider0"
+        style="@style/divider_16dp"
+        android:layout_below="@+id/toolbar"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="@color/text_black" />
+    </RelativeLayout>
+
+</RelativeLayout>

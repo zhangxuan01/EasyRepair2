@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/AnquanActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/ChangeProfileActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/CollectionActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/GuanyuActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/JifenActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/MyScrollView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/SettingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/Utils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/example/easyrepair3/WalletActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/SettingActivity.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_anquan.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_change_profile.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_collection.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_guanyu.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_jifen.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_setting.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_wallet.xml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/back.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/bg.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/default_header.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/settings.png" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
