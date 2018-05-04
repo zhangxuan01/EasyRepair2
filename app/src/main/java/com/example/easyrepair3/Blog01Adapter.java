@@ -25,12 +25,26 @@ public class Blog01Adapter extends ArrayAdapter<Blog01> {
     @Override
     public View getView(int position,  View convertView, ViewGroup parent) {
         Blog01 blog01 = getItem(position);
-        View view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
-        TextView blog01Name = (TextView) view.findViewById(R.id.blog01_name);
-        TextView blog01Content = (TextView) view.findViewById(R.id.blog01_content);
-        blog01Name.setText(blog01.getName());
-        blog01Content.setText(blog01.getContent());
+        View view;
+        ViewHolder viewHolder;
+        if (convertView == null){
+            view = LayoutInflater.from(getContext()).inflate(resourceId,parent,false);
+            viewHolder = new ViewHolder();
+            viewHolder.blog01Name = (TextView) view.findViewById(R.id.blog01_name);
+            viewHolder.blog01Content = (TextView) view.findViewById(R.id.blog01_content);
+            view.setTag(viewHolder);
+        }else {
+            view = convertView;
+            viewHolder = (ViewHolder) view.getTag();
+        }
+
+        viewHolder.blog01Name.setText(blog01.getName());
+        viewHolder.blog01Content.setText(blog01.getContent());
         return view;
+    }
+    class ViewHolder{
+        TextView blog01Name;
+        TextView blog01Content;
     }
 }
 

@@ -16,6 +16,7 @@ public class Blog01 {
     }
 
     public String getContent() {
+
         return content;
     }
 

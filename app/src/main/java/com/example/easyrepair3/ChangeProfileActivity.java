@@ -1,6 +1,5 @@
 package com.example.easyrepair3;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -45,8 +44,7 @@ public class ChangeProfileActivity extends AppCompatActivity implements View.OnC
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.iv_back:
-                Intent intent = new Intent(ChangeProfileActivity.this,IndexActivity.class);
-                startActivity(intent);
+               finish();
         }
 
     }
