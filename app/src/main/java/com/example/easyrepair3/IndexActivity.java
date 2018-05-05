@@ -37,8 +37,8 @@ public class IndexActivity extends TabActivity {
         spec = tabHost.newTabSpec("论坛").setIndicator("论坛").setContent(intent);
         tabHost.addTab(spec);
 
-        intent = new Intent().setClass(this,OrderActivity.class);
-        spec = tabHost.newTabSpec("订单").setIndicator("订单").setContent(intent);
+        intent = new Intent().setClass(this,RepairActivity.class);
+        spec = tabHost.newTabSpec("维修").setIndicator("维修").setContent(intent);
         tabHost.addTab(spec);
 
         RadioGroup radioGroup = (RadioGroup) this.findViewById(R.id.main_tab_group);
@@ -58,7 +58,7 @@ public class IndexActivity extends TabActivity {
                         tabHost.setCurrentTabByTag("论坛");
                         break;
                     case R.id.main_tab_order:
-                        tabHost.setCurrentTabByTag("订单");
+                        tabHost.setCurrentTabByTag("维修");
                         break;
                     default:
                         // tabHost.setCurrentTabByTag("�ҵĿ���");

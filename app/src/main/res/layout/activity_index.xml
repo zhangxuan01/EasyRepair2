@@ -63,7 +63,7 @@
                     android:layout_weight="1.0"
 
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_3"
-                    android:text="订单" />
+                    android:text="维修" />
                 <RadioButton
                     android:id="@+id/main_tab_shopping"
                     style="@style/MMTabButton"
