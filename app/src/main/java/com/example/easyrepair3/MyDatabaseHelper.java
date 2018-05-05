@@ -31,7 +31,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     public  static final String CREATE_DING = "create table ding("
             + "id integer primary key autoincrement,"
-            + "username text unique,"      //用户名
+            + "username text,"      //用户名
             + "linkman text,"          //联系人
             + "link_tel text,"           //联系人手机号
             + "address text,"           //地址

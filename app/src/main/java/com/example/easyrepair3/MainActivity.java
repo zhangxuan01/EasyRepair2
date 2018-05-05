@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,9);
+        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,10);
         cre_user = (Button)findViewById(R.id.cre_user);
         add_data = (Button) findViewById(R.id.add_data);
         update_data = (Button) findViewById(R.id.update_data);

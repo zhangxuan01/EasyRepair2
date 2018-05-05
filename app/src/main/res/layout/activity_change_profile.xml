@@ -96,8 +96,20 @@
     <TextView
         android:id="@+id/number"
         style="@style/text_item"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
         android:layout_below="@+id/divider2"
-        android:text="易修号" />
+        android:textColor="@color/text_black"
+        android:text="手机号" />
+    <TextView
+        android:id="@+id/tv_change_tel"
+        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_below="@+id/tv_change_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <View
         android:id="@+id/divider3"
@@ -107,8 +119,20 @@
     <TextView
         android:id="@+id/address"
         style="@style/text_item"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
         android:layout_below="@+id/divider3"
-        android:text="地址" />
+        android:textColor="@color/text_black"
+        android:text="邮箱" />
+    <TextView
+        android:id="@+id/tv_change_email"
+        android:layout_height="50dp"
+        android:layout_width="150dp"
+        android:layout_alignBottom="@+id/divider4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <View
         android:id="@+id/divider4"

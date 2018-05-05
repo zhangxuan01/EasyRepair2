@@ -1,7 +1,9 @@
 package com.example.easyrepair3;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -24,6 +26,9 @@ public class ShoppingActivity extends AppCompatActivity implements View.OnClickL
         initData();
         setToolbar();
         setListeners();
+        SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(this);
+        String username = pref.getString("username","");
+        tv_nickname.setText(username);
     }
     private void initData() {
         alphaHeight = Utils.dip2px(this, 160);

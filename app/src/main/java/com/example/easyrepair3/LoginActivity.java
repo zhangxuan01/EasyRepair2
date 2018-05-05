@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,9);
+        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,10);
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         register = (TextView) findViewById(R.id.register);
         usernameEdit = (EditText)findViewById(R.id.username);
@@ -63,6 +63,7 @@ public class LoginActivity extends AppCompatActivity {
         if (isRemember){
             String username = pref.getString("username","");
             String password = pref.getString("password","");
+
             usernameEdit.setText(username);
             passwordEdit.setText(password);
             rememberPass.setChecked(true);

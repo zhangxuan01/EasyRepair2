@@ -5,4 +5,11 @@ package com.example.easyrepair3;
  */
 
 public class Order {
+    private Integer id;
+    private String linkman;
+    private String link_tel;
+    private String address;
+    private String q_detail;
+
+
 }
