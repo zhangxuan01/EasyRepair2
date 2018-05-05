@@ -26,7 +26,7 @@ public class IndexActivity extends TabActivity {
         Intent intent;
 
         intent = new Intent().setClass(this, BlogsActivity.class);
-        spec = tabHost.newTabSpec("博客").setIndicator("博客").setContent(intent);
+        spec = tabHost.newTabSpec("发现").setIndicator("发现").setContent(intent);
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this,ShoppingActivity.class);
@@ -34,7 +34,7 @@ public class IndexActivity extends TabActivity {
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this,ForumActivity.class);
-        spec = tabHost.newTabSpec("论坛").setIndicator("论坛").setContent(intent);
+        spec = tabHost.newTabSpec("订单").setIndicator("订单").setContent(intent);
         tabHost.addTab(spec);
 
         intent = new Intent().setClass(this,RepairActivity.class);
@@ -49,13 +49,13 @@ public class IndexActivity extends TabActivity {
                 switch (checkedId)
                 {
                     case R.id.main_tab_blogs:
-                        tabHost.setCurrentTabByTag("博客");
+                        tabHost.setCurrentTabByTag("发现");
                         break;
                     case R.id.main_tab_shopping:
                         tabHost.setCurrentTabByTag("我的");
                         break;
                     case R.id.main_tab_forum:
-                        tabHost.setCurrentTabByTag("论坛");
+                        tabHost.setCurrentTabByTag("订单");
                         break;
                     case R.id.main_tab_order:
                         tabHost.setCurrentTabByTag("维修");

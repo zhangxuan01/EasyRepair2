@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,4);
+        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,9);
         cre_user = (Button)findViewById(R.id.cre_user);
         add_data = (Button) findViewById(R.id.add_data);
         update_data = (Button) findViewById(R.id.update_data);
@@ -93,18 +93,38 @@ public class MainActivity extends AppCompatActivity {
                 values.put("password","123456");
                 values.put("age","24");
                 values.put("sex","女");
-                values.put("root_id","4");
                 db.insert("user",null,values); //插入第一条数据
                 values.clear();
                 //组装第二条数据
                 values.put("username","angela");
                 values.put("email","932250300@qq.com");
-                values.put("tel","18875218975");
+                values.put("tel","18984853307");
                 values.put("password","123456");
                 values.put("age","26");
                 values.put("sex","男");
-                values.put("root_id","4");
                 db.insert("user",null,values); //插入第二条数据
+                values.clear();
+                //添加维修人员
+                values.put("m_name","lili");
+                values.put("m_email","932250300@qq.com");
+                values.put("m_tel","13608544456");
+                values.put("m_password","123456");
+                values.put("m_age","26");
+                values.put("m_sex","男");
+                db.insert("maintainer",null,values); //插入第二条数据
+                values.clear();
+                //添加订单
+                values.put("username","tom");
+                values.put("linkman","zhangxuan");
+                values.put("link_tel","18875218975");
+                values.put("address","重庆师范大学雅风苑");
+                values.put("q_detail","123456");
+                values.put("m_name","lili");
+                values.put("m_tel","13608544456");
+                values.put("p_status","0");
+                values.put("price","100");
+                values.put("pay_method","支付宝");
+                db.insert("ding",null,values); //插入第二条数据
                 Toast.makeText(MainActivity.this,"添加成功",Toast.LENGTH_SHORT).show();
             }
         });

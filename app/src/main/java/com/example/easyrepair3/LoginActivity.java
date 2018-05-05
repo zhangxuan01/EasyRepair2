@@ -24,7 +24,7 @@ public class LoginActivity extends AppCompatActivity {
     private CheckBox rememberPass;
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
-    public String Username;
+    private TextView find_pass;
 
 
 
@@ -32,7 +32,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,4);
+        dbHelper = new MyDatabaseHelper(this,"Easy.db",null,9);
         pref = PreferenceManager.getDefaultSharedPreferences(this);
         register = (TextView) findViewById(R.id.register);
         usernameEdit = (EditText)findViewById(R.id.username);
@@ -46,6 +46,16 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent();
                 intent.setClass(LoginActivity.this,TelActivity.class);
+                startActivity(intent);
+            }
+        });
+        //数据库
+        find_pass = (TextView)findViewById(R.id.find_pass);
+        find_pass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent();
+                intent.setClass(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
             }
         });

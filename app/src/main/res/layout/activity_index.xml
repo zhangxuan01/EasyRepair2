@@ -45,17 +45,11 @@
                     android:layout_weight="1.0"
                     android:checked="true"
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_0"
-                    android:text="博客" />
+                    android:text="发现" />
 
 
 
-                <RadioButton
-                    android:id="@+id/main_tab_forum"
-                    style="@style/MMTabButton"
-                    android:layout_weight="1.0"
 
-                    android:drawableTop="@drawable/bg_checkbox_icon_menu_2"
-                    android:text="论坛" />
 
                 <RadioButton
                     android:id="@+id/main_tab_order"
@@ -64,6 +58,13 @@
 
                     android:drawableTop="@drawable/bg_checkbox_icon_menu_3"
                     android:text="维修" />
+                <RadioButton
+                    android:id="@+id/main_tab_forum"
+                    style="@style/MMTabButton"
+                    android:layout_weight="1.0"
+
+                    android:drawableTop="@drawable/bg_checkbox_icon_menu_2"
+                    android:text="订单" />
                 <RadioButton
                     android:id="@+id/main_tab_shopping"
                     style="@style/MMTabButton"
