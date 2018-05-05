@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
                 db.insert("user",null,values); //插入第一条数据
                 values.clear();
                 Intent intent = new Intent();
-                intent.setClass(RegisterActivity.this,MainActivity.class);
+                intent.setClass(RegisterActivity.this,LoginActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(),"注册成功",Toast.LENGTH_SHORT).show();
             }

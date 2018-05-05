@@ -1,6 +1,7 @@
 package com.example.easyrepair3;
 
 import android.content.ContentValues;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -65,7 +66,12 @@ public class DingdanActivity extends AppCompatActivity {
                 values.put("price","");
                 values.put("pay_method","支付宝");
                 db.insert("ding",null,values); //插入第二条数据
+                values.clear();
                 Toast.makeText(getApplicationContext(),"订单发布成功",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent();
+                intent.setClass(DingdanActivity.this,IndexActivity.class);
+                startActivity(intent);
+
             }
         });
     }
