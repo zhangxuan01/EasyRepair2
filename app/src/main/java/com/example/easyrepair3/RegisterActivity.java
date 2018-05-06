@@ -43,7 +43,7 @@ public class RegisterActivity extends AppCompatActivity {
                 values.put("email",email);
                 values.put("tel",tel);
                 values.put("password",password);
-                values.put("root_id","4");
+
                 db.insert("user",null,values); //插入第一条数据
                 values.clear();
                 Intent intent = new Intent();

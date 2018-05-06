@@ -45,8 +45,7 @@ public class ShoppingActivity extends AppCompatActivity implements View.OnClickL
         iv_header = (ImageView) findViewById(R.id.iv_header);//头像
         tv_nickname = (TextView) findViewById(R.id.tv_nickname);//昵称
         wallet = (TextView) findViewById(R.id.wallet);//钱包
-        collection = (TextView) findViewById(R.id.collection);//收藏
-        jifen= (TextView) findViewById(R.id.jifen);//积分
+
         anquan = (TextView) findViewById(R.id.anquan );//账户与安全
         guanyu = (TextView) findViewById(R.id.guanyu);//关于
         setting = (TextView) findViewById(R.id.setting);//设置
@@ -58,8 +57,8 @@ public class ShoppingActivity extends AppCompatActivity implements View.OnClickL
         iv_header.setOnClickListener(this);//头像
         tv_nickname.setOnClickListener(this);//昵称
         wallet.setOnClickListener(this);//钱包
-        collection.setOnClickListener(this);//收藏
-        jifen.setOnClickListener(this);//积分
+
+
         anquan.setOnClickListener(this);//账户与安全
         guanyu.setOnClickListener(this);//关于
         setting.setOnClickListener(this);//设置
@@ -90,19 +89,12 @@ public class ShoppingActivity extends AppCompatActivity implements View.OnClickL
                 Intent intent = new Intent(ShoppingActivity.this, WalletActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.collection://收藏
-                Intent intent1 = new Intent(ShoppingActivity.this, CollectionActivity.class);
-                startActivity(intent1);
-                break;
-            case R.id.jifen://积分
-                Intent intent2 = new Intent(ShoppingActivity.this, JifenActivity.class);
-                startActivity(intent2);
-                break;
+
             case R.id.anquan://账户与安全
                 Intent intent3 = new Intent(ShoppingActivity.this, AnquanActivity.class);
                 startActivity(intent3);
                 break;
-            case R.id.guanyu://账户与安全
+            case R.id.guanyu://关于
                 Intent intent4 = new Intent(ShoppingActivity.this, GuanyuActivity.class);
                 startActivity(intent4);
                 break;

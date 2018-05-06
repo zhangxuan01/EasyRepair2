@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".LoginActivity"
+            android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,10 +35,12 @@
         <activity android:name=".ShoppingActivity" />
         <activity android:name=".ForumActivity" />
         <activity android:name=".OrderActivity" />
+        <activity android:name=".OrderManagementActivity" />
         <activity android:name=".BlogDetailActivity" />
         <activity android:name=".DingdanActivity" />
         <activity android:name=".RepairActivity" />
-        <activity android:name=".OrderManagementActivity"></activity>
+        <activity android:name=".BindActivity" />
+        <activity android:name=".ModifierPassActivity"></activity>
     </application>
 
 </manifest>
